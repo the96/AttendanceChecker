@@ -1,0 +1,23 @@
+{
+  "name": "Attendance Checker",
+  "manifest_version": 2,
+  "version": "1.0",
+  "browser_action": {
+    "default_title": "Attendance Checker",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "content_script.js"
+      ],
+      "matches": [
+        "https://meet.google.com/*"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage"
+  ]
+}
