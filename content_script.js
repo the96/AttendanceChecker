@@ -14,7 +14,7 @@ function checkAttendance(request) {
   const attendedMemberDivs = document.getElementsByClassName("ZjFb7c")
 
   if(attendedMemberDivs.length == 0) {
-    alert('参加者の一覧が見当たりません。Meetの仕様が変わったのかもしれない…😇')
+    alert('参加者の一覧が見当たりません。参加者一覧を開いていますか？(開いててもこの表示が出るならMeetの仕様が変わったのかもしれない…😇)')
     return 'error'
   }
 
@@ -42,7 +42,7 @@ function getAttendedMember () {
   const attendedMemberDivs = document.getElementsByClassName("ZjFb7c")
 
   if(attendedMemberDivs.length == 0) {
-    alert('参加者の一覧が見当たりません。Meetの仕様が変わったのかもしれない…😇')
+    alert('参加者の一覧が見当たりません。参加者一覧を開いていますか？(開いててもこの表示が出るならMeetの仕様が変わったのかもしれない…😇)')
     return []
   }
 

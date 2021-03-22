@@ -40,7 +40,7 @@ function getAttendedMemberList() {
 function trimQueryFromUrl(url) {
   const querySymbolIndex = url.indexOf('?')
   if (querySymbolIndex == -1) return url
-  return url.slice(url.indexOf('?'))
+  return url.slice(0,querySymbolIndex)
 }
 
 function saveMemberList() {
